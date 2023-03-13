@@ -1,0 +1,58 @@
+.ServiceContainer {
+    width: 500px;
+    height: 300px;
+    background-color:hsla(256,68%,13%,1);
+    background-image:
+    radial-gradient(at 100% 100%, hsla(257,73%,53%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, rgb(30, 14, 73) 0px, transparent 50%);  
+    border-radius: 10px;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 50px 40px;
+    .image {
+        position: absolute;
+        top: -50px;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background-color: #12092F;
+        z-index: 1;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .glass {
+        width: 100%;
+        height: 100%;
+        background: rgba( 11, 5, 29, 0.25 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        flex-direction: column;
+        padding: 0 30px;
+        position: relative;
+        .cont {
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+            flex-direction: column;
+            margin: 50px 0;
+            position : absolute;
+            top: 35px;
+            padding: 0 20px;
+
+        }
+    }
+}

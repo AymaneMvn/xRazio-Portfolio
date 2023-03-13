@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
+
+@import "./components/xrazio";
+@import "./components/header";
+@import "./components/cards";
+@import "./components/landing";
+@import "./components/pointSlide";
+@import "./components/work";
+@import "./components/about";
+@import "./components/description";
+@import "./components/thumbnails";
+@import "./components/footer";
+@import "./components/services";
+@import "./components/Service";
+@import "./components/skills";

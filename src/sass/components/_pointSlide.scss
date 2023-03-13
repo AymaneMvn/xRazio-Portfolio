@@ -1,0 +1,46 @@
+.point-slide {
+    position: fixed;
+    z-index: 55;
+    display: flex;
+    flex-direction: column;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .point-slide span {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 15px 10px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px #ffffff;
+  }
+  
+  .point-slide span:hover::after {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  
+  .point-slide span::after {
+    content: "";
+    width: 300%;
+    height: 300%;
+    position: absolute;
+    background-color: #ffffff4f;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+  }
+  
+  .point-slide span.active {
+    background-color: var(--third2-color);
+    box-shadow: 0px 0px 10px var(--third2-color);
+  }
+  

@@ -1,0 +1,30 @@
+.ServicesContain {
+    background-color: var(--main-color);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 50px 10px;
+    .serviceH1 {
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+        position: absolute;
+        top: 0;
+        left: 45%;
+    }
+    
+    .comp {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    }
+}
+

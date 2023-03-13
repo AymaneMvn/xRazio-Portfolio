@@ -1,0 +1,41 @@
+:root {
+    --main-color: #0b051d;
+    --scend-color: #0433f2;
+    --third2-color: #f407ad;
+    --third-color: #6131df;
+    --four-color: #3ab892;
+    --wight-color: #ffffff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: poppins;
+    scroll-behavior: smooth;
+  }
+
+  body::-webkit-scrollbar {
+    width: 1em;
+    background-color: #101530;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--third-color);
+    box-shadow: 0px 0px 30px 30px var(--third-color);
+  }
+  
+  ::selection {
+    background-color: #6231df3f;
+  }
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }

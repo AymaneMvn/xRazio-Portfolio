@@ -1,0 +1,55 @@
+.Th-container {
+    width:  100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+    margin-top: 50px;
+    .background-color{
+        width: 400px;
+        height: 250px;
+        background: linear-gradient(24deg, #6131df96, #0000ff00);
+        overflow: hidden;
+        .images {
+            width: 100%;
+            height: 100%;
+            background-image: url("../Images/lines.png");
+            background-position: center;
+            background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url("../Images/lines.png");
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .glass {
+                width: 90%;
+                height: 90%;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 1;
+                position: relative;
+                overflow: hidden;
+                &:hover img {
+                    -moz-transform: scale(1.1);
+	                -webkit-transform: scale(1.1) ;
+	                transform: scale(1.1);
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    overflow: hidden;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    transition: all .8s ease-in-out;
+                   
+
+                }
+            }
+        }
+    }
+}
